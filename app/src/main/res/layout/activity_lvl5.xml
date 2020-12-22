@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <TextView
+                android:text="Level 5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:textSize="27dp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_weight=".5"
+            android:gravity="left">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="0dp"
+                android:gravity="center"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <TextView
+                    android:id="@+id/pointlvl5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white"
+                    android:text="Points:"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:gravity="right">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <TextView
+                    android:id="@+id/timer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:color/white"
+                    android:text="Timer:"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <GridLayout
+                android:id="@+id/levelGrid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:alignmentMode="alignBounds"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:padding="14dp"
+                android:rowCount="1">
+                <!--Information -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="0"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+
+                    >
+                    <!--Question 1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical">
+
+                        <!--Questions-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Multiple choice questions"
+                            android:textColor="@color/pink"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="1. _______ is a potentially toxic waste."
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:id="@+id/radgrp51"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/q51a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="sharps" />
+
+                                <RadioButton
+                                    android:id="@+id/q51b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="solid waste"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q51c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="pharmaceutical waste"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q51d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="liquid waste"
+
+                                    />
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text5_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="30dp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="2. Find the odd one out"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:id="@+id/radgrp52"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/q52a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="syringes"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q52b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="needles"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q52c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="scalpels"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q52d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="blades"
+
+                                    />
+
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text5_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="30dp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="3. Incineration means"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:id="@+id/radgrp53"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/q53a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="burying in underground" />
+
+                                <RadioButton
+                                    android:id="@+id/q53b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="burning to ashes"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q53c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="sterilization"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q53d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="none of the above"
+
+                                    />
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text5_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="30dp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="4.Sharps, non-sharps,solids and liquids come under______."
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:id="@+id/radgrp54"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/q54a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="potentially toxic"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q54b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="potentially infectious"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q54c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="potentially non-toxic"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q54d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="potentially non-infectious"
+
+                                    />
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text5_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="30dp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="5. Which statement describes one type of biomedical waste?"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:id="@+id/radgrp55"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/q55a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="materials that may be poisonous, toxic, or flammable and do not pose disease-related risk."
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q55b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="waste that is saturated to the point of dripping with blood or body fluids contaminated with blood."
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q55c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="waste that does not pose a disease-related risk."
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q55d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="None of the above"
+
+                                    />
+
+
+                            </RadioGroup>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text5_5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="30dp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:lines="2"
+                                android:maxLines="2"
+                                android:padding="5dp"
+                                android:text="6. Autoclave treatment is done for 60-90 minutes under a high temperature of______."
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:id="@+id/radgrp56"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/q56a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="121°"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q56b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="145°"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q56c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="132°"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q56d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="90°"
+
+                                    />
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text5_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="30dp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="7. ______ is a sanitary land fill."
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:id="@+id/radgrp57"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/q57a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="animal waste"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q57b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="disposal of sharps"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q57c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="disposal of biomedical waste till such time when proper treatment and disposal facility is in place"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/q57d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="disposal of incineration"
+
+                                    />
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text5_7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="30dp"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/answer5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray"
+                            android:clickable="true"
+                            android:onClick="showType"
+                            android:padding="5dp"
+                            android:text="View Answer"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="If you're finished, hit Next" />
+
+                        <Button
+                            android:id="@+id/nextbtn5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginTop="-25dp"
+                            android:text="NEXT" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

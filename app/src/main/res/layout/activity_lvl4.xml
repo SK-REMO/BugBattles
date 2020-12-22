@@ -1,0 +1,1027 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <TextView
+                android:text="Level 4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:textSize="27dp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        >
+        <TextView
+            android:id="@+id/pointlvl4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Points:"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </android.support.v7.widget.CardView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:gravity="center"
+            >
+
+            <GridLayout
+                android:id="@+id/levelGrid"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:layout_weight="8"
+                android:columnOrderPreserved="false"
+                android:alignmentMode="alignBounds"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="14dp"
+                >
+                <!--Information -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="0"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp"
+
+                    >
+                    <!--Question 1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical">
+
+                        <!--Questions-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Select the correct option:"
+                            android:textColor="@color/pink"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="1. When you find biomedical waste in regular waste, which of these things should you do?"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp1"
+                                >
+                                <RadioButton
+                                    android:id="@+id/q1a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="fill out an AEMS report"
+
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q1b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="notify the area leader"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q1c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="notify your service co-ordinator"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q1d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="all of the above"
+
+                                    />
+
+                            </RadioGroup>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="2. Anatomical wastes should be place in which container?"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp2"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q2a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="yellow container "
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q2b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="black container"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q2c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="red container"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q2d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="white container"
+
+                                    />
+
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="3. What are the steps to take if you are exposed to blood or other infectious materials?"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp3"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q3a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="needle sticks or sharps injuries should be immediately washed with soap and water"
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q3b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="irrigate eyes with an eye wash for 10 to 15 mins"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q3c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="15dp"
+                                    android:lines="2"
+                                    android:maxLines="2"
+                                    android:text="report the incident to your supervisor and seek immediate medical treatment"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q3d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="all of the above"
+
+                                    />
+
+                            </RadioGroup>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="4. Infectious solid waste to be discarded in"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp4"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q4a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="yellow bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q4b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="green bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q4c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="blue bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q4d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="red bag"
+
+                                    />
+
+                            </RadioGroup>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="5. Soiled infectious waste should be disposed in"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp5"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q5a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="yellow bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q5b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="red bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q5c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="green bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q5d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="blue bag"
+
+                                    />
+
+
+
+                            </RadioGroup>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="6. IV bottles should be disposed in"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp6"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q6a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="black bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q6b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="yellow bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q6c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="green bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q6d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="red bag"
+
+                                    />
+
+                            </RadioGroup>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="7. IV tubings to be displaced in"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp7"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q7a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="sharps"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q7b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="red bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q7c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="green bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q7d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="blue bag"
+
+                                    />
+
+                            </RadioGroup>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="8. Outdated and discarded medicines to be displaced in"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp8"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q8a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="light blue bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q8b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="black bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q8c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="dark blue bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q8d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="light green bag"
+                                    />
+
+                            </RadioGroup>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="9.Straws to be discarded in"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp9"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q9a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Black bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q9b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Blue bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q9c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="red bag"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q9d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="Green bag"
+
+                                    />
+
+                            </RadioGroup>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/lightgray"
+                            android:layout_margin="5dp"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="10. Biomedical waste may be"
+                                android:textColor="@color/colorAccent" />
+
+                            <!--Answer Buttons-->
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/radgrp10"
+                                >
+
+                                <RadioButton
+                                    android:id="@+id/q10a"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="hazardous to health"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q10b"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="non-hazardous to health"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q10c"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="hazardous or non-hazardous to health"
+
+                                    />
+                                <RadioButton
+                                    android:id="@+id/q10d"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="15dp"
+                                    android:text="all of the above"
+
+                                    />
+
+                            </RadioGroup>
+
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+
+                                >
+                                <!--android:id="@+id/q1"-->
+
+                                <TextView
+                                    android:id="@+id/text4_10"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_marginBottom="30dp"
+                                    android:text=""
+                                    android:padding="5dp"
+                                    android:textColor="@color/colorAccent" />
+
+
+
+                            </LinearLayout>
+
+
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/answer4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:onClick="showType"
+                            android:text="View Answer"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="10dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@color/lightgray"
+                            android:padding="5dp"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="If you're finished, hit Next"
+                            android:layout_marginLeft="20dp"
+                            />
+                        <Button
+                            android:id="@+id/nextbtn4"
+                            android:layout_marginTop="-25dp"
+                            android:layout_marginLeft="200dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:onClick="btnfunc"
+                            android:text="NEXT"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </GridLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

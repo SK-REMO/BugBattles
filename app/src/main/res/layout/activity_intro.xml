@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <TextView
+                android:text="Introduction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:textSize="27dp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <GridLayout
+            android:id="@+id/levelGrid"
+            android:columnCount="1"
+            android:rowCount="1"
+            android:layout_weight="8"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignBounds"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="14dp"
+            >
+            <!--Information -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+
+                >
+                <!--Question 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="  DEFINITION\n
+\n              Biomedical waste is defined as any waste, which is generated during the diagnosis, treatment or immunisation of human beings or animals, or in research activities pertaining thereto, or in the production or testing of biologicals.
+\n\n
+CATEGORIES OF BIO MEDICAL WASTE\n
+        There are ten defined categories -
+\n
+1. Anatomical waste: (tissues, organs, body parts)
+\n
+2.Waste sharps: (used/unused needles, syringes, lancets, scalpels, blades, glass etc.)
+\n
+3.Discarded medicines and cytotoxic drugs.
+\n
+4.Soiled wastes: (items contaminated with blood and body fluids, including cotton dressings, linen, plaster casts, bedding etc.)
+\n
+5.Solid wastes: (wastes generated from disposable items other than waste sharps such as tubing, catheters, i.v. sets, etc.)
+\n
+6.Liquid waste: (waste generated from washing, cleaning, house keeping and disinfection activities including these activities in labs).
+\n\n
+PRINCIPLES OF BIOMEDICAL WASTE MANAGEMENT -
+\nThe principles of biomedical waste management are as follows:-
+\n
+a.General principles of hygiene and sanitation.
+\nb.Waste minimization.
+\nc.Waste segregation.
+\nd.Waste treatment on site.
+\ne.Waste transportation.
+\nf.Waste treatment off site.
+\ng.Final disposal."
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+
+                >
+            <!--Question 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="TREATMENT
+         \nThe goals of biomedical waste treatment are to reduce or eliminate the waste's hazards, and usually to make the waste unrecognizable. Treatment should render the waste safe for subsequent handling and disposal. There are several treatment methods that can accomplish these goals.
+           \nBiomedical waste is often incinerated. An efficient incinerator will destroy pathogens and sharps.
+            \nAn autoclave may also be used to treat biomedical waste. An autoclave uses steam and pressure to sterilize the waste or reduce its microbiological load to a level at which it may be safely disposed of.
+             \nMicrowave disinfection can also be employed for treatment of Biomedical wastes. Microwave irradiation is a type of non-contact heating technologies for disinfection.
+            \nFor liquids and small quantities, a 1–10% solution of bleach can be used to disinfect biomedical waste. Solutions of sodium hydroxide and other chemical disinfectants may also be used, depending on the waste's characteristics. Other treatment methods include heat, alkaline digesters and the use of microwaves.
+            \nFor autoclaves and microwave systems, a shredder may be used as a final treatment step to render the waste unrecognizable.
+\n\n
+EVALUATION
+\n                Ongoing evaluation of the biomedical waste management programme in the hospital is very important to identify bottlenecks and to take remedial action. It is suggested that Hospital Infection Control Committee (HICCOM) should specifically look into this aspect.
+\n                 It may not be possible to achieve all the standards in one go. The aim should be to make improvements and gradually move towards a sustainable system in order to achieve a healthier environment, mind and body. "
+                />
+
+                <Button
+                    android:id="@+id/ibtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go Back"
+                    />
+
+            </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

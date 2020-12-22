@@ -1,0 +1,2096 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <TextView
+                android:text="Level 3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:textSize="27dp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        >
+        <TextView
+            android:id="@+id/pointlvl3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Points: 40"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </android.support.v7.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <GridLayout
+                android:id="@+id/levelGrid"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:alignmentMode="alignBounds"
+                android:columnCount="1"
+                android:columnOrderPreserved="false"
+                android:padding="14dp"
+                android:rowCount="1">
+                <!--Information -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="0"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+
+                    >
+                    <!--Question 1-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical">
+
+                        <!--Questions-->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Click and Drag the text into correct containers"
+                            android:textColor="@color/pink"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginBottom="20dp"
+                                    android:text="Question 1"
+                                    android:textColor="@color/turquiose"
+                                    android:textSize="20dp" />
+
+                                <RelativeLayout
+                                    android:id="@+id/q1lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="25dp"
+                                    android:background="@color/colorAccent"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Soiled Cotton"
+                                        android:textColor="@color/turquiose" />
+
+                                </RelativeLayout>
+
+
+                                <ImageView
+                                    android:id="@+id/redbox1lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox1lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox1lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox1lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text1lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 2"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q2lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Mask"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox2lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox2lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox2lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox2lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text2lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text="asda"
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 3"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q3lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vial"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/lightbluebox3lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/lightbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox3lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox3lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox3lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text3lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 4"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q4lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Glass Pieces"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blackbox4lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightgreenbox4lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightgreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightbluebox4lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox4lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text4lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 5"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q5lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Heart"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox5lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox5lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox5lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox5lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text5lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 6"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q6lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Newspaper"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox6lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox6lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox6lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox6lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text6lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 7"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q7lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Needles"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blackbox7lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox7lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox7lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox7lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text7lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 8"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q8lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Saline Bottles"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sharpbox8lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightbluebox8lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightgreenbox8lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightgreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox8lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text8lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 9"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q9lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wet Cotton"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox9lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox9lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox9lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox9lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text9lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 10"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q10lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Diaper"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blackbox10lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox10lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox10lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/redbox10lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text10lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 11"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q11lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tissues"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox11lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox11lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox11lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox11lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text11lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 12"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q12lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Syringes"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox12lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox12lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox12lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox12lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text12lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 13"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q13lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Empty Plastic Bags"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox13lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightgreenbox13lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightgreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox13lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox13lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text13lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 14"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q14lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Plastic Apron"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blackbox14lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox14lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/redbox14lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox14lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text14lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 15"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q15lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Blood Bags"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sharpbox15lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox15lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/redbox15lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox15lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text15lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 16"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q16lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Oil Tins"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox16lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox16lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox16lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightgreenbox16lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightgreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text16lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 17"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q17lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Straw"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sharpbox17lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/redbox17lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox17lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/darkbluebox17lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/darkbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text17lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 18"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q18lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Scalpels"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/armygreenbox18lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/armygreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox18lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightbluebox18lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox18lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text18lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 19"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q19lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Blade"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/lightgreenbox19lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/lightgreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox19lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/redbox19lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox19lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text19lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 20"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q20lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Plastic Caps"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/redbox20lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightgreenbox20lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightgreenbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/blackbox20lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/blackbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/sharpbox20lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text20lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@color/lightgray"
+                            android:gravity="left"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="20dp"
+                                android:text="Question 21"
+                                android:textColor="@color/turquiose"
+                                android:textSize="20dp" />
+
+                            <RelativeLayout
+                                android:id="@+id/q21lvl3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="25dp"
+                                android:background="@color/colorAccent"
+                                android:padding="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Used HGT Strips"
+                                    android:textColor="@color/turquiose" />
+
+                            </RelativeLayout>
+
+                            <!--Answer Boxes-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/sharpbox21lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:background="@drawable/whitebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/lightbluebox21lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/lightbluebox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/yellowbox21lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/yellowbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <ImageView
+                                    android:id="@+id/redbox21lvl3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:background="@drawable/redbox"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+                                <TextView
+                                    android:id="@+id/text21lvl3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:layout_marginTop="30dp"
+                                    android:gravity="left"
+                                    android:padding="5dp"
+                                    android:text=""
+                                    android:textColor="@color/colorAccent" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <!--Next-->
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="If you're finished, hit Next" />
+
+                        <Button
+                            android:id="@+id/nextbtnlvl3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_marginLeft="200dp"
+                            android:layout_marginTop="-25dp"
+                            android:text="NEXT" />
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <!--Rules -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="8dp"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundpurple"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_info_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Instructions"
+                            android:textColor="@color/deeppurple"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Read this"
+                            android:textColor="@color/colorAccent" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--Play -->
+
+            </GridLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

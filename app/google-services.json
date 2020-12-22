@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "322766983608",
+    "firebase_url": "https://quiz-bio-medical-waste.firebaseio.com",
+    "project_id": "quiz-bio-medical-waste",
+    "storage_bucket": "quiz-bio-medical-waste.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322766983608:android:c05a7afed692f0e4",
+        "android_client_info": {
+          "package_name": "com.example.remo.quizbio_medicalwaste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322766983608-2132hcj72rs1rrru909l8cicm1m03lcm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.remo.quizbio_medicalwaste",
+            "certificate_hash": "7aff2ed297a293a2ed50226f29be0d7ad8087a7a"
+          }
+        },
+        {
+          "client_id": "322766983608-5bdq8a3su7nohl6n8mor8u5rr1i92p1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDgdY-qFZBBpWoaZMuFMBawxB8E1cEtNg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322766983608-5bdq8a3su7nohl6n8mor8u5rr1i92p1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

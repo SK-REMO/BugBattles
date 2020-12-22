@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <TextView
+                android:text="Level 1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:textSize="27dp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        >
+        <TextView
+            android:id="@+id/point1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Points: 40"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </android.support.v7.widget.CardView>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    >
+                                            <!--Information -->
+                        <android.support.v7.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            app:cardElevation="8dp"
+                            app:cardCornerRadius="8dp"
+
+                            >
+                            <!--Question 1-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:orientation="vertical">
+
+                                <!--Questions-->
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="10dp"
+                                    android:text="Identify the materials based on the Hints given below"
+                                    android:textColor="@color/pink"
+                                    android:textStyle="bold" />
+
+                                <!--Q1-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="1. A thin rubber latex which we wear on our hands before performing any procedure"
+                                    />
+
+
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    />
+
+                                <TextView
+                                    android:id="@+id/a11"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    />
+                                <Button
+                                    android:id="@+id/sb1"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+                                <!--Q2-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="2. A plastic covering to avoid spillage of any blood or blood products on our eyes"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a12"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb2"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+
+                                <!--Q3-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="3. A strip or material which is used to support the dressing"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a13"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb3"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+                                <!--Q4-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="4. A sharp material for which the nurses are afraid for"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a14"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb4"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+
+                                <!--Q5-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="5. Completely covered glass materials in which the medications are stored in liquid form"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb5"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+
+                                <!--Q6-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="6. The part of the body which does the pumping action"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a16"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb6"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+
+                                <!--Q7-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="7. The tube through which the feed is given through nose"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a17"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb7"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+
+                                <!--Q8-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="8. The equipment which mainly causes phlebitis if not cared properly"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a18"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb8"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+
+                                <!--Q9-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="9. The material through which the doctors do the surgical icision"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb9"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+
+                                <!--Q10-->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text="10. The material which we wear always before encountering a patient with air borne infection"
+                                    />
+                                <com.rengwuxian.materialedittext.MaterialEditText
+                                    android:id="@+id/q110"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:met_baseColor="@color/colorPrimary"
+                                    app:met_floatingLabel="highlight"
+                                    app:met_primaryColor="@color/colorPrimary"
+                                    app:met_singleLineEllipsis="true"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:textAllCaps="true"/>
+                                <TextView
+                                    android:id="@+id/a110"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:text=""
+                                    android:gravity="center_vertical"
+                                    android:layout_marginBottom="10dp"
+                                    />
+                                <Button
+                                    android:id="@+id/sb10"
+                                    android:layout_marginLeft="250dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="bottom"
+                                    android:background="@color/lightblue"
+                                    android:textColor="@android:color/white"
+                                    android:layout_marginBottom="10dp"
+                                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                                    android:text="Submit"/>
+
+
+
+
+
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="If you're finished, hit Next"
+                                    android:layout_marginLeft="20dp"
+                                    />
+                                <Button
+                                    android:id="@+id/nextbtn1"
+                                    android:layout_marginTop="-25dp"
+                                    android:layout_marginLeft="200dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:text="NEXT"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+</LinearLayout>

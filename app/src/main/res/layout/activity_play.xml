@@ -1,0 +1,2709 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            >
+            <TextView
+                android:text="Level 2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:textSize="27dp"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"
+                android:textAlignment="center"
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="8dp"
+        >
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="Points: 40"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+    </android.support.v7.widget.CardView>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+
+        <GridLayout
+            android:id="@+id/levelGrid"
+            android:columnCount="1"
+            android:rowCount="1"
+            android:layout_weight="8"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignBounds"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="14dp"
+            >
+            <!--Information -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="0"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+
+                >
+                <!--Question 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
+                    <!--Questions-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Select the correct color code boxes as per the question asked:"
+                        android:textColor="@color/pink"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="1. Syringe"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:id="@+id/q1"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-60dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox1"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox1"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox1"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox1"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox1"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+                            <ImageView
+                                android:id="@+id/lightgreenbox1"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox1"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox1"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="2. Bandage"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:id="@+id/q2"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-69dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox2"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox2"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox2"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox2"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox2"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+                            <ImageView
+                                android:id="@+id/lightgreenbox2"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox2"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox2"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+                            <TextView
+                                android:id="@+id/text2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="3. Gloves"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:id="@+id/q3"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-60dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox3"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox3"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox3"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox3"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox3"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox3"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox3"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox3"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="4. Vegetables"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-88dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox4"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox4"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox4"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox4"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox4"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox4"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox4"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox4"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="5. Thermocol Cups"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-120dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox5"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox5"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox5"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox5"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox5"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox5"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox5"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox5"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="6. Ampoules"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-80dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox6"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox6"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox6"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox6"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox6"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox6"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox6"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox6"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="7. Dressings"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-78dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox7"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox7"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox7"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox7"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox7"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox7"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox7"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox7"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="8. Unistick"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-68dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox8"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox8"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox8"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox8"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox8"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox8"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox8"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox8"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="9. Plastic Bottles"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-108dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox9"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox9"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox9"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox9"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox9"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox9"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox9"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox9"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="10. Needles"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-76dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox10"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox10"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox10"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox10"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox10"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox10"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox10"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox10"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="11. Rotten Fruits"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-106dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox11"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox11"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox11"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox11"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox11"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox11"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox11"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox11"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="12. Infectious Rubber Articles"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-187dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox12"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox12"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox12"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox12"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox12"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox12"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox12"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox12"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="13. Newspaper"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-96dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox13"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox13"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox13"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox13"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox13"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox13"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox13"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox13"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="14. Glass Bottles"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-108dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox14"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox14"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox14"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox14"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox14"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox14"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox14"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox14"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="15. Rancid nuts"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-97dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox15"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox15"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox15"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox15"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox15"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox15"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox15"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox15"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text15"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="16. Food Wrappers"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-119dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox16"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox16"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox16"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox16"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox16"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox16"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox16"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox16"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="17. Drainage Bags"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-112dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox17"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox17"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox17"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox17"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox17"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox17"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox17"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox17"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text17"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="18. Limbs"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-60dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox18"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox18"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox18"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox18"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox18"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox18"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox18"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox18"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="19. Blades"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-64dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox19"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox19"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox19"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox19"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox19"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox19"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox19"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox19"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text19"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightgray"
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="20. Oil Containers"
+                            android:textColor="@color/colorAccent" />
+
+                        <!--Answer Boxes-->
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="-110dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/redbox20"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/redbox"
+                                android:layout_marginLeft="30dp"
+                                android:clickable="true"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/yellowbox20"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/yellowbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/armygreenbox20"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/armygreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/darkbluebox20"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/darkbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightbluebox20"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightbluebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/lightgreenbox20"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/lightgreenbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/blackbox20"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/blackbox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <ImageView
+                                android:id="@+id/sharpbox20"
+                                android:layout_width="25dp"
+                                android:layout_height="50dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginLeft="5dp"
+                                android:background="@drawable/whitebox"
+                                android:foreground="?attr/selectableItemBackgroundBorderless"
+                                />
+
+                            <TextView
+                                android:id="@+id/text20"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="75dp"
+                                android:layout_marginBottom="20dp"
+                                android:layout_marginLeft="-210dp"
+                                android:text=""
+                                android:padding="5dp"
+                                android:textColor="@color/colorAccent" />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <!--Next-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="If you're finished, hit Next"
+                        android:layout_marginLeft="20dp"
+                        />
+                    <Button
+                        android:id="@+id/nextbtn"
+                        android:layout_marginTop="-25dp"
+                        android:layout_marginLeft="200dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="NEXT"/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <!--Rules -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/cerclebackgroundpurple"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_info_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="Instructions"
+                        android:textColor="@color/deeppurple"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:layout_margin="10dp"
+                        android:background="@color/lightgray" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Read this"
+                        android:textColor="@color/colorAccent" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--Play -->
+
+        </GridLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+</LinearLayout>
